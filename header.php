@@ -48,6 +48,7 @@
 		
 		<!-- Custom Typography -->
 		<link href='http://fonts.googleapis.com/css?family=<?php echo get_option('dt_heading'); ?>' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=<?php echo get_option('dt_navfont'); ?>' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=<?php echo get_option('dt_par'); ?>' rel='stylesheet' type='text/css'>
 		<?php require get_template_directory() . '/includes/style.php';?> 
 	</head>

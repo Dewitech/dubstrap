@@ -94,12 +94,25 @@ $options[] = array("name" => __('Heading Fonts','dubstrap'),
 			"desc" => "Which style would you like for homepage?",
 			"id" => $shortname."_heading",
 			"type" => "select",
-			"std" => "Quicksand",
+			"std" => "Raleway",
 			"options" => $tt_fonts);
 			
 $options[] = array("name" => __('Heading Letter Spacing','dubstrap'),
 			"desc" => "Which style would you like for homepage?",
 			"id" => $shortname."_hlspacing",
+			"type" => "text",
+			"std" => "0px");
+			
+$options[] = array("name" => __('Navigation Menu Fonts','dubstrap'),
+			"desc" => "Which style would you like for homepage?",
+			"id" => $shortname."_navfont",
+			"type" => "select",
+			"std" => "Raleway",
+			"options" => $tt_fonts);
+			
+$options[] = array("name" => __('Heading Letter Spacing','dubstrap'),
+			"desc" => "Which style would you like for homepage?",
+			"id" => $shortname."_navspacing",
 			"type" => "text",
 			"std" => "0px");
 			
@@ -116,6 +129,17 @@ $options[] = array("name" => __('Paragraph/Body Spacing','dubstrap'),
 			"type" => "text",
 			"std" => "0px");
 						
+
+
+/* Option Page - Image Thumbnail Size*/	
+$options[] = array( "name" => __('Image Thumbnails','dubstrap'),
+			"type" => "heading");	
+			
+$options[] = array("name" => __('Paragraph/Body Spacing','dubstrap'),
+			"desc" => "Which style would you like for homepage?",
+			"id" => $shortname."_pbspacing",
+			"type" => "text",
+			"std" => "0px");
 			
 /*			
 $options[] = array("name" => __('Homepage Style','dubstrap'),
@@ -555,13 +579,7 @@ $options[] = array( "name" => __('Phone','dubstrap'),
 
 $options[] = array( "name" => __('Footer','dubstrap'),
 			"type" => "heading");
-			
-$options[] = array( "name" => __('About','dubstrap'),
-			"desc" => __('Description about your about','dubstrap'),
-			"id" => $shortname."_footdesc",
-			"std" => "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica.",
-			"type" => "textarea");
-			
+						
 $options[] = array( "name" => __('Adress','dubstrap'),
 			"desc" => __('Adress','dubstrap'),
 			"id" => $shortname."_addr",
