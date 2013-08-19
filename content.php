@@ -7,5 +7,7 @@
 			<h3><?php the_title();?></h3>
 		</header>
         <div class="row content">
-			<?php the_content();?>			
+				<div class="span12">
+					<?php the_content();?>	
+				</div>
 		</div>
