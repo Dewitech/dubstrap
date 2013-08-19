@@ -7,7 +7,7 @@ get_header(); ?>
 
 	<article class="container">
 		<div class="row">
-		<?php get_template_part( 'archive-2columns'); ?>
+		<?php get_template_part( 'archive-3columns'); ?>
 		</div><!-- /row -->
 	</article><!-- #primary -->
 <?php get_footer(); ?>
