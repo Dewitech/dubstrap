@@ -278,7 +278,7 @@ function page_navi($before = '', $after = '') {
 		$start_page = 1;
 	}
 		
-	echo $before.'<div class="pagination pagination-right"><ul>'."";
+	echo $before.'<div class="pagination"><ul>'."";
 	if ($paged > 1) {
 		$first_page_text = "<";
 		echo '<li class="prev"><a href="'.get_pagenum_link().'" title="First">'.$first_page_text.'</a></li>';
