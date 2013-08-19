@@ -60,6 +60,13 @@ require get_template_directory() . '/includes/admin/dubstrap-admin-functions.php
 require get_template_directory() . '/includes/admin/dubstrap-theme-settings.php';
 require get_template_directory() . '/includes/shortcodes.php';
 require get_template_directory() . '/includes/function/shortcodes.php';
+require(get_template_directory() . '/includes/custom-widget/dt-search.php');
+require(get_template_directory() . '/includes/custom-widget/dt-quote.php');
+require(get_template_directory() . '/includes/custom-widget/dt-tabbed.php');
+require(get_template_directory() . '/includes/custom-widget/dt-carousel.php');
+require(get_template_directory() . '/includes/custom-widget/dt-accordion.php');
+require(get_template_directory() . '/includes/custom-widget/dt-skills.php');
+
 
 
 /* Nav Menu Walker */
