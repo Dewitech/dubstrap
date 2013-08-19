@@ -1,22 +1,22 @@
 <?php
 
-function dt_search() {
-	register_widget( 'dt_search' );
+function ds_search() {
+	register_widget( 'ds_search' );
 }
-add_action( 'widgets_init', 'dt_search' );
+add_action( 'widgets_init', 'ds_search' );
 
-class dt_search extends WP_Widget
+class ds_search extends WP_Widget
 {
-    function dt_search() 
+    function ds_search() 
     {
 		$widget_ops = array( 
-            'classname' => 'dt_search', 
-            'description' => __( 'Widget with a simple dt_search information.', 'dewitech' )
+            'classname' => 'ds_search', 
+            'description' => __( 'Widget with a simple ds_search information.', 'dubstrap' )
         );
 
-		$control_ops = array( 'id_base' => 'dt_search' );
+		$control_ops = array( 'id_base' => 'ds_search' );
 
-		$this->WP_Widget( 'dt_search', __( 'DT Search', 'dewitech' ), $widget_ops, $control_ops );   
+		$this->WP_Widget( 'ds_search', __( 'DS Search', 'dubstrap' ), $widget_ops, $control_ops );   
 	}
 	
 	function form( $instance )
@@ -24,7 +24,7 @@ class dt_search extends WP_Widget
 		global $icons_name;
 		
 		$defaults = array( 
-            'title' => __( 'Search...', 'dewitech' ),
+            'title' => __( 'Search...', 'dubstrap' ),
 
         );
         
@@ -32,7 +32,7 @@ class dt_search extends WP_Widget
 		
 		<p>
 			<label>
-				<strong><?php _e( 'Placeholder', 'dewitech' ) ?>:</strong><br />
+				<strong><?php _e( 'Placeholder', 'dubstrap' ) ?>:</strong><br />
 				<input class="widefat" type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" />
 			</label>
         </p>    

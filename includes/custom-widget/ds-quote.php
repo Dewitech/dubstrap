@@ -1,22 +1,22 @@
 <?php
 
-function dt_quote() {
-	register_widget( 'dt_quote' );
+function ds_quote() {
+	register_widget( 'ds_quote' );
 }
-add_action( 'widgets_init', 'dt_quote' );
+add_action( 'widgets_init', 'ds_quote' );
 
-class dt_quote extends WP_Widget
+class ds_quote extends WP_Widget
 {
-    function dt_quote() 
+    function ds_quote() 
     {
 		$widget_ops = array( 
-            'classname' => 'dt_quote', 
-            'description' => __( 'Widget with a simple dt_quote information.', 'dewitech' )
+            'classname' => 'ds_quote', 
+            'description' => __( 'Widget with a simple ds_quote information.', 'dubstrap' )
         );
 
-		$control_ops = array( 'id_base' => 'dt_quote' );
+		$control_ops = array( 'id_base' => 'ds_quote' );
 
-		$this->WP_Widget( 'dt_quote', __( 'DT Quote', 'dewitech' ), $widget_ops, $control_ops );   
+		$this->WP_Widget( 'ds_quote', __( 'DS Quote', 'dubstrap' ), $widget_ops, $control_ops );   
 	}
 	
 	function form( $instance )
@@ -24,19 +24,19 @@ class dt_quote extends WP_Widget
 		global $icons_name;
 		
 		$defaults = array( 
-            'quote' => __( 'You dont take a photograph, you make it ', 'dewitech' ),
-			'author' => __( 'Ansel Adams', 'dewitech' ),
+            'quote' => __( 'You dont take a photograph, you make it ', 'dubstrap' ),
+			'author' => __( 'Ansel Adams', 'dubstrap' ),
         );
         
 		$instance = wp_parse_args( (array) $instance, $defaults ); ?>
 		
 		<p>
 			<label>
-				<strong><?php _e( 'Quote', 'dewitech' ) ?>:</strong><br />
+				<strong><?php _e( 'Quote', 'dubstrap' ) ?>:</strong><br />
 				<input class="widefat" type="text" id="<?php echo $this->get_field_id( 'quote' ); ?>" name="<?php echo $this->get_field_name( 'quote' ); ?>" value="<?php echo $instance['quote']; ?>" />
 			</label>
 			<label>
-				<strong><?php _e( 'Author', 'dewitech' ) ?>:</strong><br />
+				<strong><?php _e( 'Author', 'dubstrap' ) ?>:</strong><br />
 				<input class="widefat" type="text" id="<?php echo $this->get_field_id( 'author' ); ?>" name="<?php echo $this->get_field_name( 'author' ); ?>" value="<?php echo $instance['author']; ?>" />
 			</label>
         </p>    

@@ -60,12 +60,12 @@ require get_template_directory() . '/includes/admin/dubstrap-admin-functions.php
 require get_template_directory() . '/includes/admin/dubstrap-theme-settings.php';
 require get_template_directory() . '/includes/shortcodes.php';
 require get_template_directory() . '/includes/function/shortcodes.php';
-require(get_template_directory() . '/includes/custom-widget/dt-search.php');
-require(get_template_directory() . '/includes/custom-widget/dt-quote.php');
-require(get_template_directory() . '/includes/custom-widget/dt-tabbed.php');
-require(get_template_directory() . '/includes/custom-widget/dt-carousel.php');
-require(get_template_directory() . '/includes/custom-widget/dt-accordion.php');
-require(get_template_directory() . '/includes/custom-widget/dt-skills.php');
+require(get_template_directory() . '/includes/custom-widget/ds-search.php');
+require(get_template_directory() . '/includes/custom-widget/ds-quote.php');
+require(get_template_directory() . '/includes/custom-widget/ds-tabbed.php');
+require(get_template_directory() . '/includes/custom-widget/ds-carousel.php');
+require(get_template_directory() . '/includes/custom-widget/ds-accordion.php');
+require(get_template_directory() . '/includes/custom-widget/ds-skills.php');
 
 
 
