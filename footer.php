@@ -9,25 +9,8 @@
 		<footer id="footer" class="footer">
 			<div class="container">
 				<div class="row">	
-					<?php if ( ! dynamic_sidebar( 'footer-sidebar-left' ) ) : ?>
-					<div class="span3 widget-about">
-						<h4>ABOUT US</h4>
-						<div id="logo3" class="pull-left">
-							<a href="<?php echo home_url(); ?>"><img src="<?php echo get_option('dt_sitelogo'); ?>" alt="logo"/></a>
-						</div>
-						<p>
-						<?php echo get_option('dt_footdesc'); ?>
-						</p>
-					</div>
-					<?php endif; // end sidebar widget area ?>
-					
-					<?php if ( ! dynamic_sidebar( 'footer-sidebar-center1' ) ) : ?>
-					<div class="span3 widget-tweet">
-						<h4>RECENT TWEETS!</h4>
-						<div class="timeline"></div>
-					</div>
-					<?php endif; // end sidebar widget area ?>
-								
+					<?php dynamic_sidebar( 'footer-sidebar-left' ); ?>
+					<?php dynamic_sidebar( 'footer-sidebar-center1' ); ?>
 					<?php if ( ! dynamic_sidebar( 'footer-sidebar-center2' ) ) : ?>
 					<div class="span3 widget-contact">
 						<h4>CONTACT</h4>	
