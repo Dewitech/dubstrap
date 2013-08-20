@@ -48,7 +48,7 @@ class ds_twitter extends WP_Widget
 		
 		?>
 
-        <div class="span3 widget-tweet">
+        <div class="widget-tweet">
 			<h4><?php echo $title ?></h4>
 			<div class="timeline"></div>
 		</div>

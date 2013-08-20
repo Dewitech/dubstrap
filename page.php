@@ -17,7 +17,7 @@ get_header();
 		<header class="page-title">
 			<h3><?php the_title();?></h3>
 		</header>
-        <div class="row content">
+        <div class="row-fluid content">
 				<?php the_content();?>
 				<?php endwhile; // end of the loop. ?>
 				<?php wp_link_pages( $args ); ?>			

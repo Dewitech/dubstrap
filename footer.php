@@ -8,7 +8,7 @@
 		<!-- Footer -->	
 		<footer id="footer" class="footer">
 			<div class="container">
-				<div class="row">	
+				<div class="row-fluid">	
 					<?php dynamic_sidebar( 'footer-sidebar-left' ); ?>
 					<?php dynamic_sidebar( 'footer-sidebar-center1' ); ?>
 					<?php if ( ! dynamic_sidebar( 'footer-sidebar-center2' ) ) : ?>
