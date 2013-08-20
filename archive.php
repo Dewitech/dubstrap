@@ -44,5 +44,5 @@ get_header(); ?>
 				get_template_part($layout);
 			?>
 		</div><!-- /row -->
-	</article><!-- #primary -->
+	</article><!-- article -->
 <?php get_footer(); ?>
