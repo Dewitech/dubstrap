@@ -589,6 +589,16 @@ $options[] = array( "name" => __('Phone','dubstrap'),
 			"type" => "text");
 			
 			
+/* Option Page 	- Google Analytics */
+$options[] = array( "name" => __('Google Analytics','dubstrap'),
+			"type" => "heading");
+
+$options[] = array( "name" => __('Tracking ID','dubstrap'),
+			"desc" => __('Google Analytics Tracking ID<br>Sample <code>UA-1234567-89</code>','dubstrap'),
+			"id" => $shortname."_gaid",
+			"std" => "",
+			"type" => "text");
+						
 /* Option Page  - Footer */	
 
 $options[] = array( "name" => __('Footer','dubstrap'),
@@ -598,13 +608,6 @@ $options[] = array( "name" => __('Adress','dubstrap'),
 			"desc" => __('Adress','dubstrap'),
 			"id" => $shortname."_addr",
 			"std" => "PO Box 0000 Proxy, North Pole",
-			"type" => "text");
-			
-			
-$options[] = array( "name" => __('Flickr Photo','dubstrap'),
-			"desc" => __('input your flickr ID, try to use <a href="http://idgettr.com/">idgettr.com</a> to get your ID','dubstrap'),
-			"id" => $shortname."_flickrstr",
-			"std" => "52617155@N08",
 			"type" => "text");
 			
 $options[] = array( "name" => __('Footer Copyright Text','dubstrap'),
