@@ -1,22 +1,22 @@
 <?php
 
-function dt_skills() {
-	register_widget( 'dt_skills' );
+function ds_skills() {
+	register_widget( 'ds_skills' );
 }
-add_action( 'widgets_init', 'dt_skills' );
+add_action( 'widgets_init', 'ds_skills' );
 
-class dt_skills extends WP_Widget
+class ds_skills extends WP_Widget
 {
-    function dt_skills() 
+    function ds_skills() 
     {
 		$widget_ops = array( 
-            'classname' => 'dt_skills', 
+            'classname' => 'ds_skills', 
             'description' => __( 'Widget to showoff skills information.', 'dewitech' )
         );
 
-		$control_ops = array( 'id_base' => 'dt_skills' );
+		$control_ops = array( 'id_base' => 'ds_skills' );
 
-		$this->WP_Widget( 'dt_skills', __( 'DT Skills', 'dewitech' ), $widget_ops, $control_ops );   
+		$this->WP_Widget( 'ds_skills', __( 'DS Skills', 'dewitech' ), $widget_ops, $control_ops );   
 	}
 	
 	function form( $instance )

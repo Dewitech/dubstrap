@@ -16,6 +16,11 @@ article {margin-top:60px}
 .item-cat {margin-bottom:20px; height:300px;}
 .footer-bottom {margin-top:20px;}
 
+/* Contact Widget
+----------------------------------------------------- */
+ul.contact-widget {list-style-type:none; margin:0;}
+.contact-widget  i{font-size:20px;}
+.contact-widget li {padding: 2px 0;}
 /* Flikcr
 ----------------------------------------------------- */
 #flickr_badge_wrapper img {

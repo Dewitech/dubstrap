@@ -62,12 +62,12 @@ require get_template_directory() . '/includes/shortcodes.php';
 require get_template_directory() . '/includes/function/shortcodes.php';
 require(get_template_directory() . '/includes/custom-widget/ds-search.php');
 require(get_template_directory() . '/includes/custom-widget/ds-quote.php');
-require(get_template_directory() . '/includes/custom-widget/ds-tabbed.php');
-require(get_template_directory() . '/includes/custom-widget/ds-carousel.php');
 require(get_template_directory() . '/includes/custom-widget/ds-accordion.php');
 require(get_template_directory() . '/includes/custom-widget/ds-skills.php');
 require(get_template_directory() . '/includes/custom-widget/ds-twitter.php');
 require(get_template_directory() . '/includes/custom-widget/ds-flickr.php');
+require(get_template_directory() . '/includes/custom-widget/ds-contact.php');
+
 
 
 
