@@ -66,6 +66,7 @@ require(get_template_directory() . '/includes/custom-widget/ds-tabbed.php');
 require(get_template_directory() . '/includes/custom-widget/ds-carousel.php');
 require(get_template_directory() . '/includes/custom-widget/ds-accordion.php');
 require(get_template_directory() . '/includes/custom-widget/ds-skills.php');
+require(get_template_directory() . '/includes/custom-widget/ds-twitter.php');
 
 
 
@@ -227,6 +228,13 @@ function dubstrap_widgets_init() {
 
 
 }
+add_action( 'init', 'dubstrap_widgets_init' );
+function add_button() {  
+   if ( current_user_can('edit_posts') &&  current_user_can('edit_pages') )  
+   {  
+     add_filter('mce_external_plugins', 'add_plugin');  
+   }  
+}  
 
 
 // Numeric Page Navi

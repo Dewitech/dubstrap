@@ -68,6 +68,46 @@
 		</footer>	
 		
 		<?php wp_footer(); ?>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" charset="utf-8">
+		/*	jQuery(document).ready(new function() {
+
+				jQuery("#map").gMap({
+					controls: false,
+					scrollwheel: true,
+					maptype: '<?php echo get_option('dt_maptype') ?>',
+					address: '<?php echo get_option('dt_mapaddr') ?>, <?php echo get_option('dt_mapprov') ?>,<?php echo get_option('dt_mapcountry') ?>',
+					markers: [
+						{
+							address: '<?php echo get_option('dt_mapaddr') ?>, <?php echo get_option('dt_mapprov') ?>,<?php echo get_option('dt_mapcountry') ?>',
+							html: '<?php echo get_option('dt_mapaddr') ?>, <?php echo get_option('dt_mapprov') ?>,<?php echo get_option('dt_mapcountry') ?>',
+							popup: true
+						}
+							],
+					address: '<?php echo get_option('dt_mapaddr') ?>, <?php echo get_option('dt_mapprov') ?>,<?php echo get_option('dt_mapcountry') ?>',
+					zoom: <?php echo get_option('dt_mapzoom') ?>
+				});
+				
+			});
+		*/
+		// Twitter Setting
+			  jQuery(function($){
+				$(".timeline").tweet({
+				  join_text: "auto",
+				  modpath: "<?php bloginfo( 'url' ); ?>/wp-content/themes/dubstrap/includes/twitter/twitter.php", 
+				  username: "<?php echo get_option("dt_soctwit") ?>",
+				  avatar_size: 48,
+				  count: 1,
+				  auto_join_text_default: " we said, ",
+				  auto_join_text_ed: " we ",
+				  auto_join_text_ing: " we were ",
+				  auto_join_text_reply: " we replied ",
+				  auto_join_text_url: " we were checking out ",
+				  loading_text: "loading tweets..."
+				});
+			  });	
+
+		</script> 
 
 	</body>
 </html>

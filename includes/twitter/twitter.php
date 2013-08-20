@@ -36,7 +36,7 @@ class ezTweet {
 	private $user_secret = 'TcIKv4WIJkvz2xYHsUidUdUwQvAVWtFQsw0bkHVo4M';
 
 	// Path to tmhOAuth libraries
-	private $lib = './includes/';
+	private $lib = './includes/twitter';
 
 	// Enable caching
 	private $cache_enabled = false;

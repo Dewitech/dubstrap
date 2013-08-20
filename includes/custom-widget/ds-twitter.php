@@ -1,22 +1,22 @@
 <?php
 
-function ds_quote() {
-	register_widget( 'ds_quote' );
+function ds_twitter() {
+	register_widget( 'ds_twitter' );
 }
-add_action( 'widgets_init', 'ds_quote' );
+add_action( 'widgets_init', 'ds_twitter' );
 
-class ds_quote extends WP_Widget
+class ds_twitter extends WP_Widget
 {
-    function ds_quote() 
+    function ds_twitter() 
     {
 		$widget_ops = array( 
-            'classname' => 'ds_quote', 
-            'description' => __( 'Widget with a simple ds_quote information.', 'dubstrap' )
+            'classname' => 'ds_twitter', 
+            'description' => __( 'Widget with a simple ds_twitter information.', 'dubstrap' )
         );
 
-		$control_ops = array( 'id_base' => 'ds_quote' );
+		$control_ops = array( 'id_base' => 'ds_twitter' );
 
-		$this->WP_Widget( 'ds_quote', __( 'DS Quote', 'dubstrap' ), $widget_ops, $control_ops );   
+		$this->WP_Widget( 'ds_twitter', __( 'DS Twitter', 'dubstrap' ), $widget_ops, $control_ops );   
 	}
 	
 	function form( $instance )
@@ -24,20 +24,15 @@ class ds_quote extends WP_Widget
 		global $icons_name;
 		
 		$defaults = array( 
-            'quote' => __( 'You dont take a photograph, you make it ', 'dubstrap' ),
-			'author' => __( 'Ansel Adams', 'dubstrap' ),
+            'title' => __( 'Recent Tweets', 'dubstrap' ),
         );
         
 		$instance = wp_parse_args( (array) $instance, $defaults ); ?>
 		
 		<p>
 			<label>
-				<strong><?php _e( 'Quote', 'dubstrap' ) ?>:</strong><br />
-				<input class="widefat" type="text" id="<?php echo $this->get_field_id( 'quote' ); ?>" name="<?php echo $this->get_field_name( 'quote' ); ?>" value="<?php echo $instance['quote']; ?>" />
-			</label>
-			<label>
-				<strong><?php _e( 'Author', 'dubstrap' ) ?>:</strong><br />
-				<input class="widefat" type="text" id="<?php echo $this->get_field_id( 'author' ); ?>" name="<?php echo $this->get_field_name( 'author' ); ?>" value="<?php echo $instance['author']; ?>" />
+				<strong><?php _e( 'Title', 'dubstrap' ) ?>:</strong><br />
+				<input class="widefat" type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" />
 			</label>
         </p>    
    
@@ -47,19 +42,17 @@ class ds_quote extends WP_Widget
 	function widget( $args, $instance )
 	{
 		extract( $args );
-		$quote = $instance['quote'];
-		$author = $instance['author'];
+		$title = $instance['title'];
 		
 		echo $before_widget;                
 		
 		?>
 
-        <section class="widget blockquote-widget">
-			<blockquote>
-				<p><?php echo $quote ?><small><?php echo $author ?></small></p>
-			</blockquote>
-		</section>
-
+        <div class="span3 widget-tweet">
+			<h4><?php echo $title ?></h4>
+			<div class="timeline"></div>
+		</div>
+				
 		<?php
 		echo $after_widget;
 	}                     
@@ -67,8 +60,7 @@ class ds_quote extends WP_Widget
     function update( $new_instance, $old_instance ) 
     {
 		$instance = $old_instance;
-		$instance['quote'] = strip_tags( $new_instance['quote'] );
-		$instance['author'] = strip_tags( $new_instance['author'] );
+		$instance['title'] = strip_tags( $new_instance['title'] );;
 		return $instance;
 	}
 	
