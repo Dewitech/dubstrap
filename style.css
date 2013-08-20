@@ -15,3 +15,30 @@ article {margin-top:60px}
 .portfolio-img {margin-bottom:20px}
 .item-cat {margin-bottom:20px; height:300px;}
 .footer-bottom {margin-top:20px;}
+
+/* Flikcr
+----------------------------------------------------- */
+#flickr_badge_wrapper img {
+    border-color: #2B2F33;
+    border-style: solid;
+    border-width: 2px;
+    float: left;
+    height: 54px;
+    margin: 0 0 7px 7px;
+    transition: all 0.3s ease-out 0s;
+    width: 54px;
+}
+
+.not-found  {
+    padding-top: 50px;
+}
+.not-found h1 {
+    font-size: 120px;
+    padding-bottom: 20px;
+}
+.not-found-icon {
+    display: block;
+    font-size: 220px;
+    line-height: 1em;
+    text-align: center;
+}

@@ -21,16 +21,7 @@
 						</ul>
 					</div>
 					<?php endif; // end sidebar widget area ?>
-					
-					
-					<?php if ( ! dynamic_sidebar( 'footer-sidebar-right' ) ) : ?>
-					<div class="span3 widget-flickr">
-						<h4>FLICKR</h4>				
-						<div id="flickr_badge_wrapper" class="clearfix">
-							<script src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=Random&amp;size=s&amp;layout=x&amp;source=user&amp;user=<?php echo get_option('dt_flickrstr') ?>"></script>
-						</div>
-					</div>
-					<?php endif; // end sidebar widget area ?>
+					<?php dynamic_sidebar( 'footer-sidebar-right' )?>
 					
 					
 				</div>
