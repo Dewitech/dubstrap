@@ -17,10 +17,12 @@ get_header();
 		<header class="page-title">
 			<h3><?php the_title();?></h3>
 		</header>
-        <div class="row-fluid content">
+        <div class="row content">
+			<div class="span12">
 				<?php the_content();?>
 				<?php endwhile; // end of the loop. ?>
-				<?php wp_link_pages( $args ); ?>			
+				<?php wp_link_pages( $args ); ?>
+			</div>
 		</div>
 	</article>
 <?php get_footer(); ?>

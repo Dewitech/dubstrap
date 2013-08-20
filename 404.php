@@ -12,7 +12,7 @@ get_header(); ?>
 	<article class="container">
 		<div id="content" class="site-content" role="main">
 
-			<header class="page-header">
+			<header class="span12 page-header">
 				<h1 class="page-title"><?php _e( 'Not found', 'twentythirteen' ); ?></h1>
 			</header>
 
