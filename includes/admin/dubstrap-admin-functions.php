@@ -43,7 +43,7 @@ function siteoptions_admin_head() { ?>
 
 <script type="text/javascript">
 jQuery(function(){
-var message = '<p><strong>Activation Successful!</strong> This theme\'s settings are located under <a href="<?php echo admin_url('admin.php?page=siteoptions'); ?>">Appearance > Dewitech Options</a>.</p>';
+var message = '<p><strong>Activation Successful!</strong> This theme\'s settings are located under <a href="<?php echo admin_url('admin.php?page=siteoptions'); ?>">Appearance > Dubstrap Options</a>.</p>';
 jQuery('.themes-php #message2').html(message);
 });
 </script>
@@ -141,7 +141,7 @@ function siteoptions_options_page(){
   <form action="" enctype="multipart/form-data" id="ofform">
     <div id="header">
       <div class="logo">
-        <h2>Dewitech Options</h2>
+        <h2>Dubstrap Options</h2>
       </div>
       <div class="icon-option"> </div>
       <div class="clear"></div>
@@ -176,12 +176,12 @@ function siteoptions_options_page(){
 }
 
 function of_style_only() {
-	wp_enqueue_style('admin-style', get_template_directory_uri().'/includes/admin/dubstrap-admin-style.css');
+	wp_enqueue_style('admin-style', get_template_directory_uri().'/includes/admin/Dubstrap-admin-style.css');
 	wp_enqueue_style('color-picker', get_template_directory_uri().'/includes/admin/js/colorpicker.css');
 	$color = get_user_option('admin_color');
 	if ($color == "fresh")
 		{
-		wp_enqueue_style('admin-style', get_template_directory_uri().'/includes/admin/dubstrap-admin-style.css');
+		wp_enqueue_style('admin-style', get_template_directory_uri().'/includes/admin/Dubstrap-admin-style.css');
 		wp_enqueue_style('color-picker', get_template_directory_uri().'/includes/admin/js/colorpicker.css');
 		}
 }
