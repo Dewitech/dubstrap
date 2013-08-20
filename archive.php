@@ -35,7 +35,14 @@ get_header(); ?>
 					<?php } ?>
 				</div>
 			</div>
-		<?php get_template_part( 'archive-3columns'); ?>
+			<?php
+				// declare variable before get_template_part
+				$layout = get_option(dt_layout);
+			
+				// call global $layout from inside the template part
+				global $layout;
+				get_template_part($layout);
+			?>
 		</div><!-- /row -->
 	</article><!-- #primary -->
 <?php get_footer(); ?>

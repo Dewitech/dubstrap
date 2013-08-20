@@ -71,7 +71,7 @@ Tags: clean, html5, slick, white, clean.
 #dt-container .controls .of-typography-unit { float:left; width:50px; }
 #dt-container .controls .of-typography-face { float:left; width:100px; }
 #dt-container .controls .of-radio-img-img { border:3px solid #fff; cursor:pointer; display:none; float:left; margin:0 5px 10px 0; }
-#dt-container .controls .of-radio-img-selected { border:3px solid #ccc; }
+#dt-container .controls .of-radio-img-selected { border:3px solid #0088cc; }
 #dt-container .controls .of-radio-img-img:hover { opacity:.8; }
 #dt-container .controls .of-border-style { float:left; width:120px; }
 #dt-container .controls input:focus,#dt-container select:focus,#dt-container textarea:focus { background:#fff; }

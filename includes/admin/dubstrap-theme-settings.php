@@ -41,7 +41,13 @@ $tt_maptype = array (
 'ROADMAP'
 );
 
-$tt_zoom = range(1,50);
+//Achive/Category Layout
+$tt_layout = array (
+'archive-1columns' => '1columns.png',
+'archive-2columns' => '2columns.png',
+'archive-3columns' => '3columns.png'
+);
+
 
 //Theme Color
 $tt_themecol = array (
@@ -68,26 +74,26 @@ $options[] = array( "name" => __('General','dubstrap'),
 			"type" => "heading");
 
 $options[] = array("name" => __('Featured Post','dubstrap'),
-			"desc" => "Which style would you like for homepage?",
+			"desc" => "Category to show on Featured Area",
 			"id" => $shortname."_fcat",
 			"type" => "select",
 			"options" => $dt_slug);
 			
 $options[] = array("name" => __('Number Of Post to Show','dubstrap'),
-			"desc" => "Which style would you like for homepage?",
+			"desc" => "Number of post to show on Featured Area",
 			"id" => $shortname."_fcatnum",
 			"std" => "3",
 			"type" => "select",
 			"options" => array("1","2","3","4","5","6","7","8","9","10","11","12"));
 			
-$options[] = array("name" => __('Recent Works/Showcase','dubstrap'),
-			"desc" => "Which style would you like for homepage?",
+$options[] = array("name" => __('Featured Area 2','dubstrap'),
+			"desc" => "Category to show on Featured Area 2",
 			"id" => $shortname."_fcat2",
 			"type" => "select",
 			"options" => $dt_slug);
 			
 $options[] = array("name" => __('Number Of Post to Show','dubstrap'),
-			"desc" => "Which style would you like for homepage?",
+			"desc" => "Number of post to show on Featured Area 2",
 			"id" => $shortname."_fcatnum2",
 			"std" => "6",
 			"type" => "select",
@@ -105,55 +111,44 @@ $options[] = array( "name" => __('Typhography','dubstrap'),
 			"type" => "heading");
 			
 $options[] = array("name" => __('Heading Fonts','dubstrap'),
-			"desc" => "Which style would you like for homepage?",
+			"desc" => "Heading font-family",
 			"id" => $shortname."_heading",
 			"type" => "select",
 			"std" => "Raleway",
 			"options" => $tt_fonts);
 			
 $options[] = array("name" => __('Heading Letter Spacing','dubstrap'),
-			"desc" => "Which style would you like for homepage?",
+			"desc" => "Letter spacing for Heading",
 			"id" => $shortname."_hlspacing",
 			"type" => "text",
 			"std" => "0px");
 			
 $options[] = array("name" => __('Navigation Menu Fonts','dubstrap'),
-			"desc" => "Which style would you like for homepage?",
+			"desc" => "navigation menu font-family",
 			"id" => $shortname."_navfont",
 			"type" => "select",
 			"std" => "Raleway",
 			"options" => $tt_fonts);
 			
-$options[] = array("name" => __('Heading Letter Spacing','dubstrap'),
-			"desc" => "Which style would you like for homepage?",
+$options[] = array("name" => __('Navigation Menu Letter Spacing','dubstrap'),
+			"desc" => "Letter spacing for Navigation Menu",
 			"id" => $shortname."_navspacing",
 			"type" => "text",
 			"std" => "0px");
 			
 $options[] = array("name" => __('Paragraph/Body Fonts','dubstrap'),
-			"desc" => "Which style would you like for homepage?",
+			"desc" => "Paragraph/body font-family",
 			"id" => $shortname."_par",
 			"type" => "select",
 			"std" => "Lato",
 			"options" => $tt_fonts);
 			
 $options[] = array("name" => __('Paragraph/Body Spacing','dubstrap'),
-			"desc" => "Which style would you like for homepage?",
+			"desc" => "linespacing for paragraph/body",
 			"id" => $shortname."_pbspacing",
 			"type" => "text",
 			"std" => "0px");
 						
-
-
-/* Option Page - Image Thumbnail Size*/	
-$options[] = array( "name" => __('Image Thumbnails','dubstrap'),
-			"type" => "heading");	
-			
-$options[] = array("name" => __('Paragraph/Body Spacing','dubstrap'),
-			"desc" => "Which style would you like for homepage?",
-			"id" => $shortname."_pbspacing",
-			"type" => "text",
-			"std" => "0px");
 			
 /*			
 $options[] = array("name" => __('Homepage Style','dubstrap'),
@@ -588,6 +583,17 @@ $options[] = array( "name" => __('Phone','dubstrap'),
 			"std" => "+62 (0) 1234 56789",
 			"type" => "text");
 			
+	/* Option Page 	- Archive/Category */
+$options[] = array( "name" => __('Archive/Category Layout','dubstrap'),
+			"type" => "heading");
+
+$options[] = array( "name" => __('Archive/Category Layout','dubstrap'),
+			"desc" => __('choose Layout for Archive/Category pages','dubstrap'),
+			"id" => $shortname."_layout",
+			"std" => "3columns",
+			"type" => "images",
+			"options" => $tt_layout );
+
 			
 /* Option Page 	- Google Analytics */
 $options[] = array( "name" => __('Google Analytics','dubstrap'),

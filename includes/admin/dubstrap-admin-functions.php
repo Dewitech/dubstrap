@@ -804,7 +804,7 @@ function siteoptions_machine($options) {
 				$output .= '<span>';
 				$output .= '<input type="radio" id="of-radio-img-' . $value['id'] . $i . '" class="checkbox of-radio-img-radio" value="'.$key.'" name="'. $value['id'].'" '.$checked.' />';
 				$output .= '<div class="of-radio-img-label">'. $key .'</div>';
-				$output .= '<img src="'.$option.'" alt="" class="of-radio-img-img '. $selected .'" onClick="document.getElementById(\'of-radio-img-'. $value['id'] . $i.'\').checked = true;" />';
+				$output .= '<img src="'. get_template_directory_uri() .'/includes/admin/images/'.$option.'" alt="" class="of-radio-img-img '. $selected .'" onClick="document.getElementById(\'of-radio-img-'. $value['id'] . $i.'\').checked = true;" />';
 				$output .= '</span>';
 				
 			}
