@@ -33,7 +33,7 @@ get_header();
 	  
 	  <!-- Featured Portfolio Start -->
 	  <div class="row">
-		<?php query_posts('category_name='. get_option('dt_fcat2') .'&posts_per_page='. get_option('dt_fcatnum') .''); ?>
+		<?php query_posts('category_name='. get_option('dt_fcat2') .'&posts_per_page='. get_option('dt_fcatnum2') .''); ?>
 		
 		  <?php while (have_posts()) : the_post(); ?>
 			<?php
