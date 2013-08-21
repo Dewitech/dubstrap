@@ -72,6 +72,12 @@ require 'googlewebfont.php';
 /* Option Page - General */	
 $options[] = array( "name" => __('General','dubstrap'),
 			"type" => "heading");
+			
+$options[] = array("name" => __('Hero Unit','dubstrap'),
+			"desc" => "Hero Unit Category to Pull",
+			"id" => $shortname."_herounit",
+			"type" => "select",
+			"options" => $dt_slug);
 
 $options[] = array("name" => __('Featured Post','dubstrap'),
 			"desc" => "Category to show on Featured Area",

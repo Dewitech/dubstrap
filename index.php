@@ -10,9 +10,13 @@ get_header();
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+	  <?php query_posts('category_name='. get_option('dt_herounit') .''); ?>
+	  <?php while (have_posts()) : the_post(); ?>
+		<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php echo the_title(); ?></a></h1>
+		<p><?php the_excerpt(); ?></p>
+		<p><a class="btn btn-primary btn-large" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">View details &raquo;</a></p>
+	  <?php endwhile;?>
+	  <?php wp_reset_query(); ?>
       </div>
 
       <!-- Featured Contente Start -->
