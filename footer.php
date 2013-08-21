@@ -74,10 +74,10 @@
 				$(".timeline").tweet({
 				  join_text: "auto",
 				  modpath: "<?php bloginfo( 'url' ); ?>/wp-content/themes/dubstrap/includes/twitter/twitter.php", 
-				  username: "<?php echo get_option("dt_soctwit") ?>",
+				  username: "<?php echo get_option("dt_twitter") ?>",
 				  avatar_size: 48,
 				  count: 1,
-				  auto_join_text_default: " we said, ",
+		//		  auto_join_text_default: " we said, ",
 		//		  auto_join_text_ed: " we ",
 		//		  auto_join_text_ing: " we were ",
 		//		  auto_join_text_reply: " we replied ",
