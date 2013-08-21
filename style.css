@@ -16,9 +16,12 @@ article {margin-top:60px}
 .footer-bottom {margin-top:20px;}
 
 /* Archive Style */
-.item-cat {margin-bottom:20px; height:300px;}
-.item-cat2 {margin-bottom:20px; height:400px;}
+.item-cat {margin-bottom:20px; height:300px; overflow:hidden;}
+.item-cat2 {margin-bottom:20px; height:300px; overflow:hidden;}
 
+/* Archive Style */
+ul.meta {list-style-type:none; margin:-10px 0 10px 0;}
+.meta li {display:inline;}
 
 /* Contact Widget
 ----------------------------------------------------- */
