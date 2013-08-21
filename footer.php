@@ -35,9 +35,10 @@
 		<?php wp_footer(); ?>
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript" charset="utf-8">
+		<?php if (get_option('dt_gaid')) { ?>
 		// Google Analytics
 			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', '<?php echo get_option("dt_gaid") ?>']);
+			_gaq.push(['_setAccount', '<?php echo get_option('dt_gaid') ?>']);
 			_gaq.push(['_trackPageview']);
 
 			(function() {
@@ -45,6 +46,8 @@
 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
+		<?php } ?>
+
 			
 		/*	jQuery(document).ready(new function() {
 
