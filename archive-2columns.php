@@ -1,7 +1,7 @@
 <?php if ( have_posts() ) : ?>
 	<?php /* The loop */ ?>
 	<?php while ( have_posts() ) : the_post(); ?>
-		<div class="span6 item-cat">
+		<div class="span6 item-cat2">
 				<header>
 					
 					<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
