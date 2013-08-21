@@ -19,6 +19,9 @@ article {margin-top:60px}
 .item-cat {margin-bottom:20px; height:300px; overflow:hidden;}
 .item-cat2 {margin-bottom:20px; height:300px; overflow:hidden;}
 
+/* Social Icons */
+ul.social-icons  {list-style-type:none; font-size:20px}
+.social-icons li {display:inline; padding:0 5px;}
 /* Archive Style */
 ul.meta {list-style-type:none; margin:-10px 0 10px 0;}
 .meta li {display:inline;}

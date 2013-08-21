@@ -93,7 +93,7 @@ $options[] = array("name" => __('Number Of Post to Show','dubstrap'),
 			"options" => array("1","2","3","4","5","6","7","8","9","10","11","12"));
 			
 $options[] = array("name" => __('Featured Area 2','dubstrap'),
-			"desc" => "Category to show on Featured Area 2",
+			"desc" => "Category to show on Featured Area 2, only showing Featured Images on the posts",
 			"id" => $shortname."_fcat2",
 			"type" => "select",
 			"options" => $dt_slug);

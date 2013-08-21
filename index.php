@@ -13,7 +13,7 @@ get_header();
 	  <?php query_posts('category_name='. get_option('dt_herounit') .''); ?>
 	  <?php while (have_posts()) : the_post(); ?>
 		<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php echo the_title(); ?></a></h1>
-		<p><?php the_excerpt(); ?></p>
+		<?php the_excerpt(); ?>
 		<p><a class="btn btn-primary btn-large" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">View details &raquo;</a></p>
 	  <?php endwhile;?>
 	  <?php wp_reset_query(); ?>
@@ -26,7 +26,7 @@ get_header();
 	  <?php while (have_posts()) : the_post(); ?>
 			<div class="span4">
 				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php echo the_title(); ?></a></h2>
-				<p><?php the_excerpt(); ?></p>
+				<?php the_excerpt(); ?>
 				<p><a class="btn" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">View details &raquo;</a></p>
 			</div>
 	  <?php endwhile;?>
