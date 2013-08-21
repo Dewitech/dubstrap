@@ -28,37 +28,37 @@
 						<div class="span6">
 							<ul class="social-icons pull-right">
 								<?php if (get_option('dt_facebook')) { ?>
-											<li><a href="http://facebook.com/<?php echo get_option('dt_facebook') ?>" target="_blank"><i class="icon-facebook"></i></a></li>
+											<li><a href="http://facebook.com/<?php echo get_option('dt_facebook') ?>" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook" rel="tooltip"><i class="icon-facebook"></i></a></li>
 								<?php } ?>
 								<?php if (get_option('dt_twitter')) { ?>
-											<li><a href="http://twitter.com/<?php echo get_option('dt_twitter') ?>" target="_blank"><i class="icon-twitter"></i></a></li>
+											<li><a href="http://twitter.com/<?php echo get_option('dt_twitter') ?>" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter" rel="tooltip"><i class="icon-twitter"></i></a></li>
 								<?php } ?>
 								<?php if (get_option('dt_gplus')) { ?>
 											<li><a href="<?php echo get_option('dt_gplus') ?>" rel="me" target="_blank"><i class="icon-google-plus"></i></a></li>
 								<?php } ?>
 								<?php if (get_option('dt_github')) { ?>
-											<li><a href="http://github.com/<?php echo get_option('dt_github') ?>" target="_blank"><i class="icon-github-alt"></i></a></li>
+											<li><a href="http://github.com/<?php echo get_option('dt_github') ?>" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Github" rel="tooltip"><i class="icon-github-alt"></i></a></li>
 								<?php } ?>
 								<?php if (get_option('dt_linkedin')) { ?>
-											<li><a href="<?php echo get_option('dt_linkedin') ?>" target="_blank"><i class="icon-linkedin"></i></a></li>
+											<li><a href="<?php echo get_option('dt_linkedin') ?>" target="_blank"><i class="icon-linkedin" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin" rel="tooltip"></i></a></li>
 								<?php } ?>
 								<?php if (get_option('dt_youtube')) { ?>
-											<li><a href="http://youtube.com/user/<?php echo get_option('dt_youtube') ?>" target="_blank"><i class="icon-youtube"></i></a></li>
+											<li><a href="http://youtube.com/user/<?php echo get_option('dt_youtube') ?>" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Youtube" rel="tooltip"><i class="icon-youtube"></i></a></li>
 								<?php } ?>
 								<?php if (get_option('dt_pinterest')) { ?>
-											<li><a href="http://pinterest.com/<?php echo get_option('dt_pinterest') ?>" target="_blank"><i class="icon-pinterest"></i></a></li>
+											<li><a href="http://pinterest.com/<?php echo get_option('dt_pinterest') ?>" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest" rel="tooltip"><i class="icon-pinterest"></i></a></li>
 								<?php } ?>
 								<?php if (get_option('dt_tumblr')) { ?>
-											<li><a href="<?php echo get_option('dt_tumblr') ?>" target="_blank"><i class="icon-tumblr"></i></a></li>
+											<li><a href="<?php echo get_option('dt_tumblr') ?>" target="_blank"><i class="icon-tumblr" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tumblr" rel="tooltip"></i></a></li>
 								<?php } ?>
 								<?php if (get_option('dt_instagram')) { ?>
-											<li><a href="<?php echo get_option('dt_instagram') ?>" target="_blank"><i class="icon-instagram"></i></a></li>
+											<li><a href="<?php echo get_option('dt_instagram') ?>" target="_blank"><i class="icon-instagram" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram" rel="tooltip"></i></a></li>
 								<?php } ?>
 								<?php if (get_option('dt_foursquare')) { ?>
-											<li><a href="<?php echo get_option('dt_foursquare') ?>" target="_blank"><i class="icon-foursquare"></i></a></li>
+											<li><a href="<?php echo get_option('dt_foursquare') ?>" target="_blank"><i class="icon-foursquare" data-toggle="tooltip" data-placement="top" title="" data-original-title="Foursquare" rel="tooltip"></i></a></li>
 								<?php } ?>
 								<?php if (get_option('stackexchange')) { ?>
-											<li><a href="<?php echo get_option('stackexchange') ?>" target="_blank"><i class="icon-stackexchange"></i></a></li>
+											<li><a href="<?php echo get_option('stackexchange') ?>" target="_blank"><i class="icon-stackexchange" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stackexchange" rel="tooltip"></i></a></li>
 								<?php } ?>
 							</ul>
 						</div>
