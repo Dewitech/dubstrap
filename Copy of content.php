@@ -12,12 +12,7 @@
 			</ul>
 		</header>
         <div class="row content">
-			<div class="span8">
-				<?php the_content();?>	
-			</div>
-			
-			<div class="span4">
-				<?php get_sidebar();?>
-			</div>
+				<div class="span12">
+					<?php the_content();?>	
+				</div>
 		</div>
-

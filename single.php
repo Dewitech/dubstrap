@@ -16,7 +16,9 @@ get_header(); ?>
 	<?php endwhile; // end of the loop. ?>
 	<?php wp_link_pages( $args ); ?>
 		<div class="row">
-			<?php comments_template(); ?>
+			<div class="span12">
+				<?php comments_template(); ?>
+			</div>	
 		</div>
 	</article>
 	
