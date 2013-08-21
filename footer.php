@@ -11,17 +11,8 @@
 				<div class="row-fluid">	
 					<?php dynamic_sidebar( 'footer-sidebar-left' ); ?>
 					<?php dynamic_sidebar( 'footer-sidebar-center1' ); ?>
-					<?php if ( ! dynamic_sidebar( 'footer-sidebar-center2' ) ) : ?>
-					<div class="span3 widget-contact">
-						<h4>CONTACT</h4>	
-						<ul class="nav nav-list listy">
-							<li><i class="icon-map-marker"></i><?php echo get_option('dt_addr'); ?></li>
-							<li><i class="icon-envelope"></i> <a href="mailto:<?php echo get_option('dt_footmail'); ?>"><?php echo get_option('dt_footmail'); ?></a></li>
-							<li><i class="icon-phone-sign"></i> <?php echo get_option('dt_footphone'); ?></li>
-						</ul>
-					</div>
-					<?php endif; // end sidebar widget area ?>
-					<?php dynamic_sidebar( 'footer-sidebar-right' )?>
+					<?php dynamic_sidebar( 'footer-sidebar-center2' ); ?>
+					<?php dynamic_sidebar( 'footer-sidebar-right' ); ?>
 					
 					
 				</div>
