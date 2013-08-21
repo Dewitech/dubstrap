@@ -176,12 +176,12 @@ function siteoptions_options_page(){
 }
 
 function of_style_only() {
-	wp_enqueue_style('admin-style', get_template_directory_uri().'/includes/admin/Dubstrap-admin-style.css');
+	wp_enqueue_style('admin-style', get_template_directory_uri().'/includes/admin/dubstrap-admin-style.css');
 	wp_enqueue_style('color-picker', get_template_directory_uri().'/includes/admin/js/colorpicker.css');
 	$color = get_user_option('admin_color');
 	if ($color == "fresh")
 		{
-		wp_enqueue_style('admin-style', get_template_directory_uri().'/includes/admin/Dubstrap-admin-style.css');
+		wp_enqueue_style('admin-style', get_template_directory_uri().'/includes/admin/dubstrap-admin-style.css');
 		wp_enqueue_style('color-picker', get_template_directory_uri().'/includes/admin/js/colorpicker.css');
 		}
 }
