@@ -135,6 +135,12 @@ $options[] = array("name" => __('Navigation Menu Fonts','dubstrap'),
 			"type" => "select",
 			"std" => "Raleway",
 			"options" => $tt_fonts);
+
+$options[] = array("name" => __('Navigation Menu Font Size','dubstrap'),
+			"desc" => "Font Size for Navigation Menu",
+			"id" => $shortname."_navfsize",
+			"type" => "text",
+			"std" => "");
 			
 $options[] = array("name" => __('Navigation Menu Letter Spacing','dubstrap'),
 			"desc" => "Letter spacing for Navigation Menu",
@@ -148,6 +154,12 @@ $options[] = array("name" => __('Paragraph/Body Fonts','dubstrap'),
 			"type" => "select",
 			"std" => "Lato",
 			"options" => $tt_fonts);
+			
+$options[] = array("name" => __('Paragraph/Body Font Size','dubstrap'),
+			"desc" => "Font Size for Paragraph/Body",
+			"id" => $shortname."_pfsize",
+			"type" => "text",
+			"std" => "");
 			
 $options[] = array("name" => __('Paragraph/Body Spacing','dubstrap'),
 			"desc" => "linespacing for paragraph/body",

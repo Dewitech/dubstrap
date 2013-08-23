@@ -8,7 +8,7 @@
 ?>
 <style>
 h1,h2,h3,h4,h5,h6, .brand {font-family: <?php echo $gfont; ?>; letter-spacing: <?php echo get_option('dt_hlspacing'); ?> !important;}
-.nav {font-family: "<?php echo $gfont2; ?>"; letter-spacing:<?php echo get_option('dt_navspacing'); ?> !important;}
-body {font-family: "<?php echo $gfont3; ?>"; letter-spacing:<?php echo get_option('dt_pbspacing'); ?> !important;}
+.nav {font-family: "<?php echo $gfont2; ?>"; letter-spacing:<?php echo get_option('dt_navspacing'); ?> !important; font-size: <?php echo get_option('dt_navfsize'); ?>}
+body, .hero-unit {font-family: "<?php echo $gfont3; ?>"; letter-spacing:<?php echo get_option('dt_pbspacing'); ?> !important; font-size: <?php echo get_option('dt_pfsize'); ?>}
 
 </style>
