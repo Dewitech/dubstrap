@@ -6,17 +6,17 @@ add_action( 'load-post-new.php', 'fontawesome_icon_meta_boxes_setup' );
 function fontawesome_icon_meta_boxes_setup() {
 
 	/* Add meta boxes on the 'add_meta_boxes' hook. */
-	add_action( 'add_meta_boxes', 'smashing_add_post_meta_boxes' );
+	add_action( 'add_meta_boxes', 'fontawesome_add_post_meta_boxes' );
 
 	/* Save post meta on the 'save_post' hook. */
-	add_action( 'save_post', 'smashing_save_post_class_meta', 10, 2 );
+	add_action( 'save_post', 'fontawesome_save_post_class_meta', 10, 2 );
 }
 
 /* Create one or more meta boxes to be displayed on the post editor screen. */
-function smashing_add_post_meta_boxes() {
+function fontawesome_add_post_meta_boxes() {
 
 	add_meta_box(
-		'smashing-post-class',			// Unique ID
+		'fontawesome-post-class',			// Unique ID
 		esc_html__( 'Post Class', 'example' ),		// Title
 		'fontawesome_icon_class_meta_box',		// Callback function
 		'post',					// Admin page (or post type)
@@ -31,9 +31,9 @@ function fontawesome_icon_class_meta_box( $object, $box ) { ?>
 	<?php wp_nonce_field( basename( __FILE__ ), 'fontawesome_icon_class_nonce' ); ?>
 
 	<p>
-		<label for="smashing-post-class"><?php _e( "Add a custom CSS class, which will be applied to WordPress' post class.", 'example' ); ?></label>
+		<label for="fontawesome-post-class"><?php _e( "Add a custom CSS class, which will be applied to WordPress' post class.", 'example' ); ?></label>
 		<br />
-		<select class="widefat" name="smashing-post-class" value="<?php echo esc_attr( get_post_meta( $object->ID, 'fontawesome_icon_class', true ) ); ?>" />
+		<select class="widefat" name="fontawesome-post-class" value="<?php echo esc_attr( get_post_meta( $object->ID, 'fontawesome_icon_class', true ) ); ?>" />
 			<option value='icon-adjust'>adjust</option>
 			<option value='icon-adn'>adn</option>
 			<option value='icon-align-center'>align-center</option>
@@ -400,11 +400,11 @@ function fontawesome_icon_class_meta_box( $object, $box ) { ?>
 <?php }
 
 /* Save post meta on the 'save_post' hook. */
-add_action( 'save_post', 'smashing_save_post_class_meta', 10, 2 );
+add_action( 'save_post', 'fontawesome_save_post_class_meta', 10, 2 );
 
 
 /* Save the meta box's post metadata. */
-function smashing_save_post_class_meta( $post_id, $post ) {
+function fontawesome_save_post_class_meta( $post_id, $post ) {
 
 	/* Verify the nonce before proceeding. */
 	if ( !isset( $_POST['fontawesome_icon_class_nonce'] ) || !wp_verify_nonce( $_POST['fontawesome_icon_class_nonce'], basename( __FILE__ ) ) )
@@ -418,7 +418,7 @@ function smashing_save_post_class_meta( $post_id, $post ) {
 		return $post_id;
 
 	/* Get the posted data and sanitize it for use as an HTML class. */
-	$new_meta_value = ( isset( $_POST['smashing-post-class'] ) ? sanitize_html_class( $_POST['smashing-post-class'] ) : '' );
+	$new_meta_value = ( isset( $_POST['fontawesome-post-class'] ) ? sanitize_html_class( $_POST['fontawesome-post-class'] ) : '' );
 
 	/* Get the meta key. */
 	$meta_key = 'fontawesome_icon_class';

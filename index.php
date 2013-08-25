@@ -24,7 +24,12 @@ get_header();
 	  <div class="row">
 	  <?php query_posts('category_name='. get_option('dt_fcat') .'&posts_per_page='. get_option('dt_fcatnum') .''); ?>
 	  <?php while (have_posts()) : the_post(); ?>
-			<div class="span4">
+			<div class="span4 featured">
+				<?php if ( get_post_meta( get_the_ID(), 'fontawesome_icon_class', true ) ) : ?>
+				<div class="flatshadow shapewrap">
+					<i class="<?php echo get_post_meta( get_the_ID(), 'fontawesome_icon_class', true ) ?>"></i>
+				</div>
+				<?php endif; ?>
 				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php echo the_title(); ?></a></h2>
 				<?php the_excerpt(); ?>
 				<p><a class="btn" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">View details &raquo;</a></p>
