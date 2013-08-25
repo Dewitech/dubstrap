@@ -67,7 +67,7 @@ require(get_template_directory() . '/includes/custom-widget/ds-skills.php');
 require(get_template_directory() . '/includes/custom-widget/ds-twitter.php');
 require(get_template_directory() . '/includes/custom-widget/ds-flickr.php');
 require(get_template_directory() . '/includes/custom-widget/ds-contact.php');
-
+require(get_template_directory() . '/includes/fontawesome-metabox/fontawesome-metabox.php');
 
 
 
@@ -296,5 +296,6 @@ function page_navi($before = '', $after = '') {
 	}
 	echo '</ul></div>'.$after."";
 }
+
 
 ?>
