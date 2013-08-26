@@ -123,7 +123,7 @@ class description_walker extends Walker_Nav_Menu
             $item_output .= $args->link_after;
             // if the item has children add the caret just before closing the anchor tag
             if ( $args->has_children ) {
-            	$item_output .= '<b class="caret"></b></a>';
+            	$item_output .= '<i class="icon-caret-down"></i></a>';
             }
             else{
             	$item_output .= '</a>';
