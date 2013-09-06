@@ -176,3 +176,38 @@ input.search-query {
 .icon-caret-down {
   margin-left: 5px;
 }
+
+/* Carousel */
+.carousel-indicators {
+top:0%;
+right:0%;
+position:relative;
+margin:70px auto;
+text-align:center;
+}
+
+.carousel-indicators li {
+width:20px;
+height:20px;
+border-radius:50%;
+cursor:pointer;
+margin:0 auto;
+float:none;
+display:inline-block;
+margin-top: 20px;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-indicators .active {
+background-color:#d34346;
+}
+
+.carousel-indicators ul {margin: 0 auto; text-align:center;}
+.carousel-control {background:transparent; border:none;}
+
+/* Bootstrap Carousel */
+#myCarousel {margin-top:40px; height:520px;background-color: #34495e; border-bottom:15px solid #222F3D;}
+.carousel-inner>.item {padding:0 60px}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {height:350px; margin:60px auto;}
+.indicator {margin:0 auto;}
