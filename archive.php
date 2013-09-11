@@ -37,7 +37,7 @@ get_header(); ?>
 			</div>
 			<?php
 				// declare variable before get_template_part
-				$layout = get_option(dt_layout);
+				$layout = get_option('dt_layout');
 			
 				// call global $layout from inside the template part
 				global $layout;

@@ -14,7 +14,6 @@ get_header(); ?>
 		<article class="container">
 		<?php get_template_part( 'content', get_post_format() ); ?>
 	<?php endwhile; // end of the loop. ?>
-	<?php wp_link_pages( $args ); ?>
 		<div class="row">
 			<div class="span12">
 				<?php comments_template(); ?>

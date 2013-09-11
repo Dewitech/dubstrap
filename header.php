@@ -69,18 +69,11 @@
 							        <span class="icon-bar"></span>
 								</a>
 								
-								<div class="nav-collapse">
+								<div class="nav-collapse pull-right">
 									<?php dubstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 								</div>
 								
-							</nav>
-							
-							
-							<form class="navbar-search pull-right" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-								<input name="s" id="s" type="text" class="search-query" autocomplete="off" placeholder="<?php _e('Search','dubstrap'); ?>" data-provide="typeahead" data-items="4" data-source='<?php echo $typeahead_data; ?>'>
-							</form>
-							
-							
+							</nav>											
 						</div>
 					</div>
 				</div>

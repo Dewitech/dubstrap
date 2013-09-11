@@ -29,7 +29,6 @@ get_header();
 			</div>
 			
 				<?php endwhile; // end of the loop. ?>
-				<?php wp_link_pages( $args ); ?>
 
 			<div class="span4">
 			<?php get_sidebar();?>

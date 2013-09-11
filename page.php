@@ -25,7 +25,6 @@ get_header();
 			<div class="span12">
 				<?php the_content();?>
 				<?php endwhile; // end of the loop. ?>
-				<?php wp_link_pages( $args ); ?>
 			</div>
 		</div>
 	</article>
