@@ -1,6 +1,6 @@
 <?php
 /**
-Template Name: Homepage
+Main Index File
  */
 get_header(); 
 
@@ -60,25 +60,17 @@ get_header();
 		<?php query_posts('category_name='. get_option('dt_fcat2') .'&posts_per_page='. get_option('dt_fcatnum2') .''); ?>
 		
 		  <?php while (have_posts()) : the_post(); ?>
-			<?php
-				$args = array('post_type' => 'attachment', 'post_parent' => $post->ID,  'orderby' => menu_order, 'order' => ASC); 
-				$attachments = get_children($args); 							
-
-				foreach ($attachments as $attachment) { 
-					$full_url = wp_get_attachment_url($attachment->ID);
-					$image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
-					$full = wp_get_attachment_image_src($attachment->ID, 'full');
-					$alt = get_post_meta($attachment->ID, '_wp_attachment_image_alt', true);
-					$image_title = $attachment->post_title;
-			?>
 				<div class="span4 portfolio-img">
-					<a href="<?php echo $full_url;?>" data-rel="prettyPhoto" rel="prettyPhoto">
-						<img src="<?php echo $full_url; ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
-					</a>
+					<?php 
+					if ( has_post_thumbnail()) {
+					   $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');
+					   echo '<a href="' . $large_image_url[0] . '" data-rel="prettyPhoto" rel="prettyPhoto">';
+					   the_post_thumbnail( 'dubstrap-home-portfolio' ); 
+					   echo '</a>';
+					 }
+					?>
 				</div>
-			<?php } ?>
 		  <?php endwhile;?>
-		  <?php wp_reset_query(); ?>
 	  </div>
 
       <hr>
