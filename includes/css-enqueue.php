@@ -3,9 +3,6 @@
 Loading All CSS Stylesheets
 ------------------------------------------------------------------- */
 function dubstrap_css_loader() {
-	if (get_option('dt_flat') == 'flat')
-	wp_enqueue_style('flatstrap', get_template_directory_uri().'/assets/css/flatstrap.css', false ,'1.75', 'all' );
-	else
 	wp_enqueue_style('bootstrap', get_template_directory_uri().'/assets/css/bootstrap.min.css', false ,'2.3.2', 'all' );
 	wp_enqueue_style('bootstrap-responsive', get_template_directory_uri().'/assets/css/bootstrap-responsive.min.css', false ,'2.3', 'all' );
 	wp_enqueue_style('docs', get_template_directory_uri().'/assets/css/docs.css', false ,'1.0', 'all' );

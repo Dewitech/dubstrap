@@ -1,24 +1,36 @@
 <?php
 /**
- * Index
+Template Name: Homepage
  */
 get_header(); 
 
 ?>
-
-    <article class="container">
-
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-	  <?php query_posts('category_name='. get_option('dt_herounit') .''); ?>
-	  <?php while (have_posts()) : the_post(); ?>
-		<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php echo the_title(); ?></a></h1>
-		<?php the_excerpt(); ?>
-		<p><a class="btn btn-primary btn-large" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">View details &raquo;</a></p>
-	  <?php endwhile;?>
+	<div id="myCarousel" class="carousel slide">
+	  <!-- Carousel items -->
+	  <div class="carousel-inner">
+	  <?php $j=0; query_posts('category_name=slider'); ?>
+		<?php while (have_posts()) : the_post(); 
+		$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		?>
+		<?php if ($j==0) 
+			{
+			echo '<div class="active item"><img src="'. $url .'" /></div>';
+			}
+			else
+			{
+			echo '<div class="item"><img src="'. $url .'" /></div>';
+			}
+		?>
+		<?php $j++ ?>
+		<?php endwhile;?>
 	  <?php wp_reset_query(); ?>
-      </div>
+	  </div>
+	  <!-- Carousel nav -->
+	  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 
+	</div>
+    <article class="container">
       <!-- Featured Contente Start -->
 	  
 	  <div class="row">
@@ -27,12 +39,15 @@ get_header();
 			<div class="span4 featured">
 				<?php if ( get_post_meta( get_the_ID(), 'fontawesome_icon_class', true ) ) : ?>
 				<div class="flatshadow shapewrap">
-					<i class="<?php echo get_post_meta( get_the_ID(), 'fontawesome_icon_class', true ) ?>"></i>
+						<i class="<?php echo get_post_meta( get_the_ID(), 'fontawesome_icon_class', true ) ?>"></i>
 				</div>
 				<?php endif; ?>
-				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php echo the_title(); ?></a></h2>
-				<?php the_excerpt(); ?>
-				<p><a class="btn" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">View details &raquo;</a></p>
+
+				<h2><?php echo the_title(); ?></h2>
+				<div class="featured-par">
+					<?php the_excerpt(); ?>
+				</div>
+				<a class="push-button" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">View details &raquo;</a>
 			</div>
 	  <?php endwhile;?>
 	  <?php wp_reset_query(); ?>
