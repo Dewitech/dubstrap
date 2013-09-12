@@ -281,6 +281,16 @@ $options[] = array( "name" => __('Phone','dubstrap'),
 			"std" => "+62 (0) 1234 56789",
 			"type" => "text");
 			
+/* Option Styling */
+$options[] = array( "name" => __('Theme Styling', 'dubstrap'),
+			 "type" => "heading");
+			 
+$options[] = array( "name" => __('Site Favicon','dubstrap'),
+			"desc" => __('Favicon for your website, use <a href="http://tools.dynamicdrive.com/favicon/">This Tool</a> to generate favicon','dubstrap'),
+			"id" => $shortname."_favicon",
+			"std" => "",
+			"type" => "upload");
+			
 /* Option Page 	- Archive/Category */
 $options[] = array( "name" => __('Archive Layout','dubstrap'),
 			"type" => "heading");
