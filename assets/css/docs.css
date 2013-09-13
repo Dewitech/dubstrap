@@ -24,6 +24,7 @@ h6,
 .hero-unit h1,
 .navbar .brand {
   text-shadow: #000000 1px 1px 1px;
+  color: #fff;
 }
 .btn {
   -webkit-border-radius: 10px;
@@ -58,9 +59,7 @@ h6,
   border: 1px solid #beaed7;
   background-image: none;
 }
-.navbar .brand {
-  color: #ccbfe0;
-}
+
 .dropdown-menu > li > a,
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
