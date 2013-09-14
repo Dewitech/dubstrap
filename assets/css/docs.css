@@ -68,7 +68,7 @@ h6,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #322449;
-  color: #ccbfe0;
+  color: #fff;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
@@ -78,11 +78,11 @@ h6,
   background-image: none;
 }
 .navbar .nav > li > a {
-  color: #ccbfe0;
+  color: #fff;
 }
 .navbar .nav > li > a:hover {
   background-color: #322449;
-  color: #ccbfe0;
+  color: #fff;
 }
 .dropdown-menu {
   background-color: #322449;
