@@ -20,7 +20,12 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6
+{
+  text-shadow: #000000 1px 1px 1px;
+  color: #ccbfe0;
+}
+
 .hero-unit h1,
 .navbar .brand {
   text-shadow: #000000 1px 1px 1px;
