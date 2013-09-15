@@ -98,6 +98,13 @@ $options[] = array("name" => __('Featured Area 2','dubstrap'),
 			"type" => "select",
 			"options" => $dt_slug);
 			
+$options[] = array("name" => __('Number of Image Per-Row','dubstrap'),
+			"desc" => "",
+			"id" => $shortname."_rownum",
+			"std" => "6",
+			"type" => "select",
+			"options" => array("3","4","6"));
+			
 $options[] = array("name" => __('Number Of Post to Show','dubstrap'),
 			"desc" => "Number of post to show on Featured Area 2",
 			"id" => $shortname."_fcatnum2",

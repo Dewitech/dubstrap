@@ -60,7 +60,7 @@ get_header();
 		<?php query_posts('category_name='. get_option('dt_fcat2') .'&posts_per_page='. get_option('dt_fcatnum2') .''); ?>
 		
 		  <?php while (have_posts()) : the_post(); ?>
-				<div class="span4 portfolio-img">
+				<div class="span<? echo 12/get_option('dt_rownum') ?> portfolio-img">
 					<?php 
 					if ( has_post_thumbnail()) {
 					   $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');
