@@ -73,8 +73,8 @@ require 'googlewebfont.php';
 $options[] = array( "name" => __('General','dubstrap'),
 			"type" => "heading");
 			
-$options[] = array("name" => __('Hero Unit','dubstrap'),
-			"desc" => "Hero Unit Category to Pull",
+$options[] = array("name" => __('Slider','dubstrap'),
+			"desc" => "Slider Category to Pull",
 			"id" => $shortname."_herounit",
 			"type" => "select",
 			"options" => $dt_slug);
