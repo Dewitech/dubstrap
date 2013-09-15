@@ -111,6 +111,7 @@ $options[] = array("name" => __('Number Of Post to Show','dubstrap'),
 			"std" => "6",
 			"type" => "select",
 			"options" => array("1","2","3","4","5","6","7","8","9","10","11","12"));
+			
 						
 /* Option Page - General */	
 $options[] = array( "name" => __('Typhography','dubstrap'),
