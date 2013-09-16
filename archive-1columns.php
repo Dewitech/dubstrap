@@ -5,7 +5,7 @@
 					<div class="content">
 							<header>
 								
-								<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+								<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 								
 								<ul class="meta">
 									<li><i class="icon-user"></i> <?php the_author_posts_link(); ?></li>

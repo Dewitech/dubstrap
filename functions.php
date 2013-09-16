@@ -159,8 +159,8 @@ function dubstrap_widgets_init() {
 		'id' => 'sidebar-page',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => "</div>",
-		'before_title' => '<h4 class="widget-title">',
-		'after_title' => '</h4>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	));
 
 /*	register_sidebar( array(
@@ -168,8 +168,8 @@ function dubstrap_widgets_init() {
 		'id' => 'about-page-left',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => "</div>",
-		'before_title' => '<h4 class="widget-title">',
-		'after_title' => '</h4>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	));
 	
 	register_sidebar( array(
@@ -177,8 +177,8 @@ function dubstrap_widgets_init() {
 		'id' => 'about-page-center',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => "</div>",
-		'before_title' => '<h4 class="widget-title">',
-		'after_title' => '</h4>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	));
 	
 	register_sidebar( array(
@@ -186,8 +186,8 @@ function dubstrap_widgets_init() {
 		'id' => 'about-page-right',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => "</div>",
-		'before_title' => '<h4 class="widget-title">',
-		'after_title' => '</h4>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	));
 */
 	
@@ -196,8 +196,8 @@ function dubstrap_widgets_init() {
 		'id' => 'footer-sidebar-left',
 		'before_widget' => '<div id="%1$s" class="span3 %2$s">',
 		'after_widget' => "</div>",
-		'before_title' => '<h4 class="widget-title">',
-		'after_title' => '</h4>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	));
 	
 	register_sidebar( array(
@@ -205,8 +205,8 @@ function dubstrap_widgets_init() {
 		'id' => 'footer-sidebar-center1',
 		'before_widget' => '<div id="%1$s" class="span3 %2$s">',
 		'after_widget' => "</div>",
-		'before_title' => '<h4 class="widget-title">',
-		'after_title' => '</h4>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	));
 	
 	register_sidebar( array(
@@ -214,8 +214,8 @@ function dubstrap_widgets_init() {
 		'id' => 'footer-sidebar-center2',
 		'before_widget' => '<div id="%1$s" class="span3 %2$s">',
 		'after_widget' => "</div>",
-		'before_title' => '<h4 class="widget-title">',
-		'after_title' => '</h4>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	));
 	
 	register_sidebar( array(
@@ -223,8 +223,8 @@ function dubstrap_widgets_init() {
 		'id' => 'footer-sidebar-right',
 		'before_widget' => '<div id="%1$s" class="span3 %2$s">',
 		'after_widget' => "</div>",
-		'before_title' => '<h4 class="widget-title">',
-		'after_title' => '</h4>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	));
 
 
