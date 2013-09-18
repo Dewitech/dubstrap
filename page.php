@@ -15,7 +15,7 @@ get_header();
    
 	<article class="container">
 		<header class="page-title">
-			<h3><?php the_title();?></h3>
+			<h2><?php the_title();?></h2>
 			<ul class="meta">
 				<li><i class="icon-user"></i> <?php the_author_posts_link(); ?></li>
 				<li><i class="icon-calendar-empty"></i> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F j, Y'); ?></time></li>
