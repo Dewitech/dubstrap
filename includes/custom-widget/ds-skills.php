@@ -96,7 +96,7 @@ class ds_skills extends WP_Widget
 		
 
 
-        $text .= '<h4>'. $skills .'</h4>
+        $text .= '<h3>'. $skills .'</h3>
 					<div class="progress progress-success progress-striped"><div style="width: '. $amount1 .'" class="bar">'. $skills1 .' ('. $amount1 .')</div></div>
 					<div class="progress progress-success progress-striped"><div style="width: '. $amount2 .'" class="bar">'. $skills2 .' ('. $amount2 .')</div></div>
 					<div class="progress progress-success progress-striped"><div style="width: '. $amount3 .'" class="bar">'. $skills3 .' ('. $amount3 .')</div></div>

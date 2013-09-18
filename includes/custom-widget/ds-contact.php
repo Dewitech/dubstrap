@@ -67,7 +67,7 @@ class ds_contact extends WP_Widget
 		?>
 
         <div class="widget-tweet">
-			<h4><?php echo $title ?></h4>
+			<h3><?php echo $title ?></h3>
 			<ul class="contact-widget">
 				<?php if ($contact) { ?>
 							<li><i class="icon-map-marker"></i><?php echo $contact; ?></li>
